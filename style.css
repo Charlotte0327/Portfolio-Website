@@ -87,12 +87,12 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: #ef988e;
     color: #fff;
 }
 
 .button:hover {
-    background: #63b1da;
+    background: #fd0101;
     transition: all 0.3s ease;
 }
 
