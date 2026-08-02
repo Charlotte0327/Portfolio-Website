@@ -5,10 +5,6 @@
     font-family: 'Arial', sans-serif;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-}
-
 .navbar {
     background-color: #131313;
     height: 80px;
@@ -23,7 +19,7 @@ body {
 
 .navbar-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: 80px;
     z-index: 1;
     width: 100%;
