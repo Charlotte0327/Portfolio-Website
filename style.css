@@ -19,7 +19,6 @@
 
 .navbar-container {
     display: flex;
-    justify-content: center;
     height: 80px;
     z-index: 1;
     width: 100%;
