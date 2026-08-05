@@ -39,7 +39,7 @@
                     <h2>Computer Science Student | Cybersecurity</h2>
                     <p>
                         I'm a Computer Science student near sophmore standing currently attending Louisiana Tech University. I plan to concentrate in Cybersecurity with
-                        interests in network security, ethical hacking, and secure software development. I enjoy solving technical challenges and continuously expanding my knowledge through hands-on project, go check out my portfolio to see some of my latest endevors!
+                        interests in penitration testing, ethical hacking, and secure software development. I enjoy solving technical challenges and continuously expanding my knowledge through hands-on projects, go check out my portfolio to see some of my latest endeavors!
                     </p>
             </div>                 
             <div class="hero__image">
@@ -49,9 +49,18 @@
 
         <section class="about">
             <h2>Soft Skills</h2>
-            <p>Charlotte is a passionate web developer with a love for creating beautiful and functional websites. With years of experience in HTML, CSS, and JavaScript, she brings ideas to life on the web.</p>
+            <ul>
+                <li>Strong problem-solving abilities</li>
+                <li>Excellent communication skills</li>
+                <li>Team player with leadership experience</li>
+                <li>Adaptable and quick learner</li>
+            </ul>
             <h2>Technical Skills</h2>
-            <p>Charlotte has a strong foundation in programming languages such as Python, Java, and C++. She is also proficient in database management and cloud computing platforms.</p>
+            <ul>
+                <li>Knowledge in Python, HTML, CSS, and Linux</li>
+                <li>Skilled in tons</li>
+                <li>Experienced with web development and game design</li>
+            </ul>
         </section>
 
         <section class="portfolio">
@@ -64,16 +73,67 @@
             </ul>
         </section>
 
-        <section class="contact">
+        <section class="contact">  
+<!-- WHEN PUBLISHING USE FORMSPREE WHEN ACTAULLY CONNECTING EMAIL NO BACKEND NEEDED FOR NOW -->
             <h2>Quick Contact</h2>
-            <p>If you have a question, any tips, project ideas, or opportunities to discuss, feel free to send me a message. Phone or Email!</p>
-            <ul>
-                <li>Email: <a href="mailto:charlotte@example.com">charlotte@example.com</a></li>
-                <li>Phone: (985) 302-4511</li>
-            </ul>
+            <p>    Whether you have a project idea, technical question, or opportunity to discuss, I'd enjoy connecting and hearing from you. Use the form below or contact me directly via phone or email!</p>
+            <form class = "contact__form">
+                <div class = "contact__row">
+
+                    <div class =  "contact__group">
+                        <label for ="name">Name:</label>
+                        <input 
+                            type = "text" 
+                            id = "name" 
+                            name = "name" 
+                            placeholder = "Your full name"
+                            required 
+                        >
+                    </div>
+
+                    <div class =  "contact__group">
+                        <label for ="email">Email:</label>
+                        <input 
+                            type = "email" 
+                            id = "email" 
+                            name = "email" 
+                            placeholder = "your@email.com"
+                            required 
+                        >
+                    </div>
+                </div>
+
+                <div class =  "contact__group">
+                    <label for ="message">Message:</label>
+                    <textarea 
+                        id = "message" 
+                        name = "message" 
+                        rows = "4"
+                        placeholder = "I'd love to connect with you..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type = "submit" class = "contact__button">
+                    Shoot!
+                </button>
+            </div>
+            </form>
+            <div class="contact__info">
+                <p>
+                    Phone:
+                    <a href="tel:9853024511">+1 (985)-302-4511</a>
+                </p>
+
+                <p>
+                    Email:
+                    <a href="mailto:gallowaycharlotte011@gmail.com">gallowaycharlotte011@gmail.com</a>
+                </p>
+            </div>
         </section>
 
     </main>
     <script src="index.js"></script>
 </body>
 </html>
+    
