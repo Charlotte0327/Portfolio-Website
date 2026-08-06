@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="/" id="navbar__logo">Charlotte's Web</a>
+            <a href="index.html" id="navbar__logo">Charlotte's Web</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -18,16 +18,16 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Home</a>
+                    <a href="index.html" class="navbar__links">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/Contact.html" class="navbar__links">Contact Information</a>
+                    <a href="Contact.html" class="navbar__links">Contact Me</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/Resume.html" class="navbar__links">Resume</a>
+                    <a href="Resume.html" class="navbar__links">Resume</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/Portfolio.html" class="button">Portfolio</a>
+                    <a href="Portfolio.html" class="button">Portfolio</a>
                 </li>
             </ul>
         </div>
@@ -38,8 +38,8 @@
                     <h1>Charlotte Galloway</h1>
                     <h2>Computer Science Student | Cybersecurity</h2>
                     <p>
-                        I'm a Computer Science student near sophmore standing currently attending Louisiana Tech University. I plan to concentrate in Cybersecurity with
-                        interests in penitration testing, ethical hacking, and secure software development. I enjoy solving technical challenges and continuously expanding my knowledge through hands-on projects, go check out my portfolio to see some of my latest endeavors!
+                        I'm a Computer Science student near sophomore standing currently attending Louisiana Tech University. I plan to concentrate in Cybersecurity with
+                        interests in penetration testing, ethical hacking, and secure software development. I enjoy solving technical challenges and continuously expanding my knowledge through hands-on projects, go check out my portfolio to see some of my latest endeavors!
                     </p>
             </div>                 
             <div class="hero__image">
@@ -47,31 +47,82 @@
             </div>
         </section>
 
-        <section class="about">
-            <h2>Soft Skills</h2>
-            <ul>
-                <li>Strong problem-solving abilities</li>
-                <li>Excellent communication skills</li>
-                <li>Team player with leadership experience</li>
-                <li>Adaptable and quick learner</li>
-            </ul>
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>Knowledge in Python, HTML, CSS, and Linux</li>
-                <li>Skilled in tons</li>
-                <li>Experienced with web development and game design</li>
-            </ul>
+        <section class="focus">
+            <h2>Current Focus</h2>
+            <p>
+                I enjoy understanding how computers and networks work beneath the surface. What started as an interest in technology has grown into a passion for cybersecurity and building secure, reliable software. I like breaking down complex problems, 
+                learning new tools, and applying what I learn through personal projects and hands-on practice.
+            </p>
+            <p>
+                As I continue my studies, I'm focused on developing practical skills in programming, Linux, networking, and cybersecurity while preparing for internships and opportunities to contribute to real-world projects.
+            </p>
         </section>
 
-        <section class="portfolio">
-            <h2>Portfolio</h2>
-            <p>Check out my current Project:</p>
-            <ul>
-                <li><a href="/project1.html">Project 1</a></li>
-                <li><a href="/project2.html">Project 2</a></li>
-                <li><a href="/project3.html">Project 3</a></li>
-            </ul>
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class = "skills__grid">
+                    <div class="skill__card">
+                        <h3>Programming</h3>
+                        <p>Python, HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="skill__card">
+                        <h3>Cybersecurity</h3>
+                        <p>Penetration Testing, Ethical Hacking, Secure Software Development</p>
+                    </div>
+                    <div class="skill__card">
+                        <h3>Tools</h3>
+                        <p>Git, Linux, Docker, Wireshark</p>
+                    </div>
+                    <div class="skill__card">
+                        <h3>Soft Skills</h3>
+                        <p>Problem Solving, Teamwork, Critical Thinking, Time Management</p>
+                    </div>
+            </div>
         </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education__card">
+                <h3>Louisiana Tech University</h3>
+                <p>Bachelor of Science in Computer Science</p>
+                <p>Concentration: Cybersecurity</p>
+                <p>Expected Graduation: ~ Winter 2029</p>
+            </div>
+        </section>
+
+        <section class="previews">
+            <h2>Featured Projects</h2>
+            <div class="previews__grid">
+ 
+                <article class="preview__card">
+                    <h3>Port Scanner</h3>
+                    <p>
+                        Python application for scanning open ports on a network host.
+                    </p>
+                    <a href="project1.html">Learn More →</a>
+                </article>
+
+                <article class="preview__card">
+                    <h3>Password Generator</h3>
+                    <p>
+                        Python application that creates strong passwords using
+                        customizable criteria.
+                    </p>
+
+                    <a href="project2.html">Learn More →</a>
+                </article>
+
+                <article class="preview__card">
+                    <h3>Cybersecurity Labs</h3>
+                    <p>
+                        Collection of networking and Linux security exercises.
+                    </p>
+
+                    <a href="project3.html">Learn More →</a>
+                </article>
+            </div>
+        </section>
+
 
         <section class="contact">  
 <!-- WHEN PUBLISHING USE FORMSPREE WHEN ACTAULLY CONNECTING EMAIL NO BACKEND NEEDED FOR NOW -->
@@ -115,9 +166,8 @@
                 </div>
 
                 <button type = "submit" class = "contact__button">
-                    Shoot!
+                    SEND
                 </button>
-            </div>
             </form>
             <div class="contact__info">
                 <p>
@@ -133,6 +183,12 @@
         </section>
 
     </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Charlotte Galloway. All Rights Reserved.</p>
+        <p>Designed and developed by Charlotte Galloway</p>
+    </footer>
+
     <script src="index.js"></script>
 </body>
 </html>
