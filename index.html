@@ -1,168 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charlotte's Web</title> 
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charlotte's Web</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="navbar"></div>
     <main>
-       <section class="hero">
-            <div class="hero__content">
-                    <h1>Charlotte Galloway</h1>
-                    <h2>Computer Science Student | Cybersecurity</h2>
-                    <p>
-                        I'm a Computer Science student near sophomore standing currently attending Louisiana Tech University. I plan to concentrate in Cybersecurity with
-                        interests in penetration testing, ethical hacking, and secure software development. I enjoy solving technical challenges and continuously expanding my knowledge through hands-on projects, go check out my portfolio to see some of my latest endeavors!
-                    </p>
-            </div>                 
-            <div class="hero__image">
-                <img src="assets/profile.JPG" alt="Portrait of Charlotte">
-            </div>
-        </section>
+      <section class="hero">
+        <div class="hero__content">
+          <h1>Charlotte Galloway</h1>
+          <h2>Computer Science Student | Cybersecurity</h2>
+          <p>
+            I'm a Computer Science student near sophomore standing currently
+            attending Louisiana Tech University. I plan to concentrate in
+            Cybersecurity with interests in penetration testing, ethical
+            hacking, and secure software development. I enjoy solving technical
+            challenges and continuously expanding my knowledge through hands-on
+            projects, go check out my portfolio to see some of my latest
+            endeavors!
+          </p>
+        </div>
+        <div class="hero__image">
+          <img src="assets/profile.JPG" alt="Portrait of Charlotte" />
+        </div>
+      </section>
 
-        <section class="focus">
-            <h2>Current Focus</h2>
+      <section class="focus">
+        <h2>Current Focus</h2>
+        <p>
+          Exploring cybersecurity, networking, and software development with a
+          focus on understanding how systems work, from the code level to the
+          network level.
+        </p>
+        <p>
+          Applying what I learn through personal projects, security labs, and
+          hands-on experimentation to develop practical problem-solving skills.
+        </p>
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <div class="skills__grid">
+          <div class="skill__card">
+            <h3>Programming</h3>
+            <p>Python, HTML, CSS, JavaScript</p>
+          </div>
+          <div class="skill__card">
+            <h3>Cybersecurity</h3>
             <p>
-                Exploring cybersecurity, networking, and software development with a focus on understanding how systems work, from the code level to the network level.            </p>
+              Penetration Testing, Ethical Hacking, Secure Software Development
+            </p>
+          </div>
+          <div class="skill__card">
+            <h3>Tools</h3>
+            <p>Git, Linux, Docker, Wireshark</p>
+          </div>
+          <div class="skill__card">
+            <h3>Soft Skills</h3>
+            <p>Problem Solving, Teamwork, Critical Thinking, Time Management</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="education">
+        <h2>Education</h2>
+        <div class="education__card">
+          <h3>Louisiana Tech University</h3>
+          <p>Bachelor of Science in Computer Science</p>
+          <p>Concentration: Cybersecurity</p>
+          <p>Expected Graduation: Winter 2029</p>
+        </div>
+      </section>
+
+      <section class="previews">
+        <h2>Featured Projects</h2>
+        <div class="previews__grid">
+          <article class="preview__card">
+            <h3>Cybersecurity Home Lab Assessment</h3>
             <p>
-                Applying what I learn through personal projects, security labs, and hands-on experimentation to develop practical problem-solving skills.        </section>
+              Hands-on cybersecurity assessment using isolated Ubuntu virtual
+              machines, Linux networking tools, Nmap, and controlled
+              vulnerability remediation.
+            </p>
 
-        <section class="skills">
-            <h2>Skills</h2>
-            <div class = "skills__grid">
-                    <div class="skill__card">
-                        <h3>Programming</h3>
-                        <p>Python, HTML, CSS, JavaScript</p>
-                    </div>
-                    <div class="skill__card">
-                        <h3>Cybersecurity</h3>
-                        <p>Penetration Testing, Ethical Hacking, Secure Software Development</p>
-                    </div>
-                    <div class="skill__card">
-                        <h3>Tools</h3>
-                        <p>Git, Linux, Docker, Wireshark</p>
-                    </div>
-                    <div class="skill__card">
-                        <h3>Soft Skills</h3>
-                        <p>Problem Solving, Teamwork, Critical Thinking, Time Management</p>
-                    </div>
+            <a href="project1.html">Learn More →</a>
+          </article>
+
+          <article class="preview__card">
+            <h3>Password Generator</h3>
+            <p>
+              Python application that creates strong passwords using
+              customizable criteria.
+            </p>
+
+            <a href="project2.html">Learn More →</a>
+          </article>
+
+          <article class="preview__card">
+            <h3>Port Scanner</h3>
+            <p>Collection of networking and Linux security exercises.</p>
+
+            <a href="project3.html">Learn More →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact">
+        <!-- WHEN PUBLISHING USE FORMSPREE WHEN ACTAULLY CONNECTING EMAIL NO BACKEND NEEDED FOR NOW -->
+        <h2>Quick Contact</h2>
+        <p>
+          Whether you have a project idea, technical question, or opportunity to
+          discuss, I'd enjoy connecting and hearing from you. Use the form below
+          or contact me directly via phone or email!
+        </p>
+        <form
+          action="https://formspree.io/f/xljragke"
+          method="POST"
+          class="contact__form"
+        >
+          <div class="contact__row">
+            <div class="contact__group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                required
+              />
             </div>
-        </section>
 
-        <section class="education">
-            <h2>Education</h2>
-            <div class="education__card">
-                <h3>Louisiana Tech University</h3>
-                <p>Bachelor of Science in Computer Science</p>
-                <p>Concentration: Cybersecurity</p>
-                <p>Expected Graduation: Winter 2029</p>
+            <div class="contact__group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+              />
             </div>
-        </section>
+          </div>
 
-        <section class="previews">
-            <h2>Featured Projects</h2>
-            <div class="previews__grid">
- 
-                <article class="preview__card">
-                    <h3>Port Scanner</h3>
-                    <p>
-                        Python application for scanning open ports on a network host.
-                    </p>
-                    <a href="project1.html">Learn More →</a>
-                </article>
+          <div class="contact__group">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="I'd love to connect with you..."
+              required
+            ></textarea>
+          </div>
 
-                <article class="preview__card">
-                    <h3>Password Generator</h3>
-                    <p>
-                        Python application that creates strong passwords using
-                        customizable criteria.
-                    </p>
+          <button type="submit" class="contact__button">SEND</button>
+        </form>
+        <div class="contact__info">
+          <p>
+            Phone:
+            <a href="tel:9853024511">+1 (985)-302-4511</a>
+          </p>
 
-                    <a href="project2.html">Learn More →</a>
-                </article>
-
-                <article class="preview__card">
-                    <h3>Cybersecurity Labs</h3>
-                    <p>
-                        Collection of networking and Linux security exercises.
-                    </p>
-
-                    <a href="project3.html">Learn More →</a>
-                </article>
-            </div>
-        </section>
-
-
-        <section class="contact">  
-<!-- WHEN PUBLISHING USE FORMSPREE WHEN ACTAULLY CONNECTING EMAIL NO BACKEND NEEDED FOR NOW -->
-            <h2>Quick Contact</h2>
-            <p>    Whether you have a project idea, technical question, or opportunity to discuss, I'd enjoy connecting and hearing from you. Use the form below or contact me directly via phone or email!</p>
-            <form action="https://formspree.io/f/xljragke" method="POST" class = "contact__form">
-                <div class = "contact__row">
-
-                    <div class =  "contact__group">
-                        <label for ="name">Name:</label>
-                        <input 
-                            type = "text" 
-                            id = "name" 
-                            name = "name" 
-                            placeholder = "Your full name"
-                            required 
-                        >
-                    </div>
-
-                    <div class =  "contact__group">
-                        <label for ="email">Email:</label>
-                        <input 
-                            type = "email" 
-                            id = "email" 
-                            name = "email" 
-                            placeholder = "your@email.com"
-                            required 
-                        >
-                    </div>
-                </div>
-
-                <div class =  "contact__group">
-                    <label for ="message">Message:</label>
-                    <textarea 
-                        id = "message" 
-                        name = "message" 
-                        rows = "4"
-                        placeholder = "I'd love to connect with you..."
-                        required
-                    ></textarea>
-                </div>
-
-                <button type = "submit" class = "contact__button">
-                    SEND
-                </button>
-            </form>
-            <div class="contact__info">
-                <p>
-                    Phone:
-                    <a href="tel:9853024511">+1 (985)-302-4511</a>
-                </p>
-
-                <p>
-                    Email:
-                    <a href="mailto:gallowaycharlotte011@gmail.com">gallowaycharlotte011@gmail.com</a>
-                </p>
-            </div>
-        </section>
-
+          <p>
+            Email:
+            <a href="mailto:gallowaycharlotte011@gmail.com"
+              >gallowaycharlotte011@gmail.com</a
+            >
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 Charlotte Galloway. All Rights Reserved.</p>
-        <p>Created and Crafted by Charlotte Galloway</p>
+      <p>&copy; 2026 Charlotte Galloway. All Rights Reserved.</p>
+      <p>Created and Crafted by Charlotte Galloway</p>
     </footer>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
-    
