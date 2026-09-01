@@ -1,19 +1,42 @@
-# MyWeb
+# Personal Portfolio Website
 
-# Charlotte's Web 
+My personal portfolio website showcasing my education, technical skills, projects, resume, and experience as a Computer Science student.
 
-> Portfolio website designed to present various projects, skills, and academic experience as a Computer Science student near sophmore standing planning to concentrate in Cyber Security. 
+## About
 
----
+This website serves as my personal professional portfolio and documents my growth throughout my Computer Science journey.
 
-## About 
-
-This Portfolio has been created to demonstrate my technical ability in development. As well as a place to organize my numerous works for peers, employers, recruiters to evaluate and explore. 
+It includes information about my background, technical skills, projects, resume, and ways to contact me.
 
 ## Features
 
-- 
-- 
-- 
+- About Me
+- Education
+- Technical Skills
+- Projects
+- Resume
+- Contact Form
+- GitHub
+- LinkedIn
 
-## Built With 
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+
+## Projects
+
+### Linux Cybersecurity Vulnerability Assessment Lab
+
+A hands-on cybersecurity lab using virtual machines to practice Linux security, network reconnaissance, service enumeration, and vulnerability assessment in an isolated environment.
+
+## Contact
+
+If you'd like to get in touch, you can find my contact information and contact form on my portfolio website.
+
+## Author
+
+Charlotte Galloway
+
+Computer Science Student
