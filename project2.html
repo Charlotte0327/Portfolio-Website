@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SysRecon | Charlotte's Web</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <main>
+        <section class="project-page">
+
+            <h1>SysRecon</h1>
+
+            <p class="project-intro">
+                A Python-based CLI TCP port scanner built to deepen my
+                understanding of socket-level communication, network
+                reconnaissance, and command-line development.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Socket Programming</span>
+                <span>Argparse</span>
+                <span>Linux</span>
+                <span>VirtualBox</span>
+                <span>Nmap</span>
+            </div>
+
+            <h2>Overview</h2>
+            <p>
+                SysRecon is a Python CLI TCP scanner designed for basic
+                network reconnaissance. The tool allows users to scan
+                individual ports or custom port ranges and classifies
+                connection attempts as OPEN, CLOSED, TIMEOUT, or ERROR.
+            </p>
+
+            <h2>Problem & Application</h2>
+            <p>
+                Recently, I performed a home lab assessment and wanted a
+                deeper understanding of the TCP ports I was scanning.
+                Relying solely on existing tools made it harder to understand
+                what was happening at the socket and connection level.
+            </p>
+
+            <p>
+                I built SysRecon to address that gap by creating a TCP scanner
+                from the ground up. The project allowed me to explore how
+                TCP connections behave while strengthening my Python
+                fundamentals and understanding of network reconnaissance.
+            </p>
+
+            <p>
+                SysRecon could also be applied directly to the reconnaissance
+                phase of my previous cybersecurity lab by providing an
+                additional method of identifying and validating exposed TCP
+                ports alongside tools such as Nmap and <code>ss</code>.
+            </p>
+
+            <h2>Objectives</h2>
+            <ul>
+                <li>Build a functional TCP scanner from the ground up</li>
+                <li>Develop practical experience with Python socket programming</li>
+                <li>Practice command-line argument handling and input validation</li>
+                <li>Apply the tool in a controlled laboratory environment</li>
+                <li>Validate scanner results against Nmap</li>
+            </ul>
+
+            <h2>Features</h2>
+            <ul>
+                <li>TCP port scanning</li>
+                <li>Hostname and IPv4 resolution</li>
+                <li>Individual port selection with <code>--ports</code></li>
+                <li>Custom ranges with <code>--start-port</code> and <code>--end-port</code></li>
+                <li>Verbose output with <code>--verbose</code></li>
+                <li>OPEN, CLOSED, TIMEOUT, and ERROR classification</li>
+                <li>Port range validation</li>
+                <li>Color-coded terminal output</li>
+                <li>Graceful error handling</li>
+            </ul>
+
+            <h2>Validation</h2>
+            <p>
+                SysRecon was tested in an isolated VM environment consisting
+                of an attacker and target machine. A TCP service was
+                intentionally exposed on the target machine and scanned using
+                both SysRecon and Nmap with the same target and port
+                configuration.
+            </p>
+
+            <p>
+                Both tools successfully identified the intentionally exposed
+                TCP port, providing an independent validation of SysRecon's
+                scanning behavior.
+            </p>
+
+            <img
+                src="assets/02-nmap-vs-sysrecon.png"
+                alt="Nmap and SysRecon showing matching TCP port scan results"
+            >
+
+            <h2>Tools & Technologies</h2>
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Socket</span>
+                <span>Argparse</span>
+                <span>Colorama</span>
+                <span>Linux</span>
+                <span>VirtualBox</span>
+                <span>Nmap</span>
+                <span>Git</span>
+                <span>GitHub</span>
+            </div>
+
+            <h2>Limitations</h2>
+            <ul>
+                <li>TCP scanning only</li>
+                <li>Sequential scanning</li>
+                <li>No UDP scanning</li>
+                <li>No service or version detection</li>
+                <li>No operating system detection</li>
+                <li>No CIDR or subnet scanning</li>
+                <li>No result export</li>
+                <li>Fixed 1-second connection timeout</li>
+            </ul>
+
+            <h2>V2 — Coming Soon...</h2>
+            <ul>
+                <li>Concurrent port scanning</li>
+                <li>UDP scanning</li>
+                <li>Service and version detection</li>
+                <li>JSON/CSV result export</li>
+                <li>Configurable timeouts</li>
+                <li>CIDR/subnet scanning</li>
+                <li>Automated testing</li>
+            </ul>
+
+            <div class="project-links">
+                <a
+                    href="https://github.com/Charlotte0327/python-cli-project"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View GitHub Repository →
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
