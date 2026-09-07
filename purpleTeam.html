@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Workstation Purple Team Lab | Charlotte's Web</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <main>
+        <section class="project-page">
+
+            <h1>Windows Workstation Purple Team Attack & Detection Lab</h1>
+
+            <p class="project-intro">
+                A hands-on Purple Team lab simulating Windows reconnaissance,
+                initial access, privilege-escalation assessment, detection,
+                remediation, and verification in an isolated virtual environment.
+            </p>
+
+            <div class="project-tags">
+                <span>Windows</span>
+                <span>Kali Linux</span>
+                <span>Purple Team</span>
+                <span>Nmap</span>
+                <span>Wireshark</span>
+                <span>VirtualBox</span>
+            </div>
+
+            <h2>Overview</h2>
+            <p>
+                This project involved building and assessing an isolated Windows
+                workstation environment using Kali Linux as the attacker and
+                Windows 10 as the target. The assessment followed a Purple Team
+                workflow combining offensive security techniques with defensive
+                detection, investigation, remediation, and verification.
+            </p>
+
+            <h2>Objectives</h2>
+            <ul>
+                <li>Perform network reconnaissance against a Windows workstation</li>
+                <li>Identify exposed services and attack surface</li>
+                <li>Establish a controlled low-privilege remote session</li>
+                <li>Assess a potential privilege-escalation path</li>
+                <li>Analyze Windows Security Event Logs</li>
+                <li>Analyze network traffic using Wireshark</li>
+                <li>Remediate an insecure service file-permission configuration</li>
+                <li>Verify that the remediation was effective</li>
+            </ul>
+
+            <h2>Lab Architecture</h2>
+
+            <img
+                src="../assets/Network-Diagram-purple.png"
+                alt="Windows Purple Team lab architecture showing Kali Linux attacker and Windows 10 target"
+            >
+
+            <h2>Tools & Technologies</h2>
+            <div class="project-tags">
+                <span>Kali Linux</span>
+                <span>Windows 10</span>
+                <span>Nmap</span>
+                <span>SMBClient</span>
+                <span>FreeRDP</span>
+                <span>Wireshark</span>
+                <span>Event Viewer</span>
+                <span>Windows Defender</span>
+                <span>VirtualBox</span>
+            </div>
+
+            <h2>What I Practiced</h2>
+            <ul>
+                <li>Network and service reconnaissance</li>
+                <li>SMB authentication testing</li>
+                <li>RDP remote access</li>
+                <li>Low-privilege Windows enumeration</li>
+                <li>Windows service security assessment</li>
+                <li>File and directory permission analysis</li>
+                <li>Windows Security Event investigation</li>
+                <li>Network traffic analysis</li>
+                <li>Security remediation</li>
+                <li>Post-remediation verification</li>
+            </ul>
+
+            <h2>Key Finding</h2>
+            <p>
+                The assessment identified a Windows service configured to run as
+                <strong>LocalSystem</strong> while executing a file that was
+                writable by lower-privileged users. This created a potential
+                privilege-escalation path through insecure file permissions.
+            </p>
+
+            <p>
+                The excessive permissions were removed and the remediation was
+                verified by confirming that the low-privilege account could no
+                longer modify the service payload.
+            </p>
+
+            <div class="project-links">
+                <a href="https://github.com/Charlotte0327/windows-workstation-purple-team-lab"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View GitHub Repository →
+                </a>
+
+                <a href="../assets/Windows Purple Team Lab Report.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Full Report →
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
